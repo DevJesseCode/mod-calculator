@@ -1,0 +1,46 @@
+<!doctype HTML>
+<html lang="en_GB">
+<head>
+<title>Modulus Calculator</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body>
+<div class="container" draggable="true">
+<h1 class="title" >Modulus Calculator</h1>
+<h2 class="author" align="right">by WaysideBaker57</h2>
+<div class="calculator">
+<div id="calcDisplayContainer">
+	<div class="calcDisplay" id="selection">Selection: selection</div>
+	<div class="calcDisplay" id="toMod" onclick="changeSelectionToNumber()"></div>
+	<div class="calcDisplay" style="border-radius: 0px; margin: 5px 0px 0px 0px;">mod</div>
+	<div class="calcDisplay" id="mod" onclick="changeSelectionToMod()"></div>
+	<div class="calcDisplay" class="calcButton" style="width: 5%; height: 19px; padding: 5px; margin-top: 5px;">
+		<p style="margin-top: 2px;" onclick="deleteLast()" ondblclick="clearAll()"><-</p>
+	</div>
+	<div class="calcDisplay" id="answer"></div>
+</div>
+<div class="calcButtonsContainer">
+<div class="calcButton" onclick="updateDisplay(1)"><p>1</p></div>
+<div class="calcButton" onclick="updateDisplay(2)"><p>2</p></div>
+<div class="calcButton" onclick="updateDisplay(3)"><p>3</p></div>
+<div class="calcButton" onclick="multipliedBy()"><p>*</p></div>
+<div class="calcButton" onclick="updateDisplay(4)"><p>4</p></div>
+<div class="calcButton" onclick="updateDisplay(5)"><p>5</p></div>
+<div class="calcButton" onclick="updateDisplay(6)"><p>6</p></div>
+<div class="calcButton" onclick="totalOf()"><p>+</p></div>
+<div class="calcButton" onclick="updateDisplay(7)"><p>7</p></div>
+<div class="calcButton" onclick="updateDisplay(8)"><p>8</p></div>
+<div class="calcButton" onclick="updateDisplay(9)"><p>9</p></div>
+<div class="calcButton" onclick="subtractedBy()"><p>-</p></div>
+<div class="calcButton" onclick="point()"><p>.</p></div>
+<div class="calcButton" onclick="updateDisplay(0)"><p>0</p></div>
+<div class="calcButton" onclick="dividedBy()"><p>/</p></div>
+<div class="calcButton" onclick="calculateMod()"><p>=</p></div>
+</div>
+</div>
+<div id="warning" onclick="warnNoSelection()">Buttons not working?</div>
+</div>
+<script src="./js/main.js"></script>
+</body>
+</html>

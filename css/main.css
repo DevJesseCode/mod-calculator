@@ -1,0 +1,136 @@
+body{
+border-width: 0px;
+margin: 0% 1%;
+font-family: Montserrat;
+}
+
+.container{
+	width: 30vw;
+	border: 5px solid black;
+	margin-top: 1vw;
+	border-radius: 30px;
+	background: linear-gradient(to bottom right, red, purple);
+}
+
+.title{
+	margin: 8px 0px 20px 8px;
+	line-height: 0.9;
+}
+
+.author{
+	 font-family: Century Gothic;
+	 margin: -25px 2px 25px 0px
+}
+
+div.calculator{
+background-color: #dadada;
+border-radius: 10px;
+margin: 0px auto 5px auto;
+}
+
+.calcDisplay{
+font-family: Montserrat;
+background-color: #fff;
+text-align: right;
+width: auto;
+height: 19px;
+margin: 10px 10px 10px 10px;
+padding: 5px;
+border-radius: 10px;
+}
+
+#selection{
+	width: 52%;
+	text-align: left;
+	background-color: #fafafa;
+	margin-bottom: 0px;
+}
+
+#mod{
+	width: 15%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin: 5px 0px 0px 0px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+#toMod{
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	margin-right: 0px;
+	width: 48%;
+	margin-top: 5px;
+	margin-bottom: 0px
+}
+
+#answer{
+	width: 100%;
+	margin-top: -5px
+}
+
+#warning{
+	margin: 0px auto 30px auto;
+	text-align: right;
+	cursor: default;
+}
+
+.delete.calcButton{
+	width: 15%;
+	height: 19px;
+	padding: 5px;
+	margin: 10px 10px 0px 0px;
+}
+
+#calcDisplayContainer{
+	display: flex;
+	background-color: #dadada;
+	flex-wrap: wrap;
+}
+
+div.calcButtonsContainer{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 0px 10px 0px 10px;
+}
+
+div.calcButton{
+width: 23.5%;
+height: 40px;
+text-align: center;
+justify-content: center;
+border: 1px solid yellow;
+border-radius: 15px;
+margin-bottom: 9px;
+cursor: default;
+}
+
+div.calcButton:hover, div.calcButton:focus, div.calcButton:active{
+background-color: cyan;
+transition-duration: 750ms;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1300px) {
+	div.container{
+		width: 30vw
+	}
+	div.calculator{
+		width: 25vw;
+	}
+	#warning{
+		width: 25vw;
+	}
+}
+
+@media screen and (max-width: 1300px) and (min-width: 700px) {
+	div.container{
+		width: 48vw
+	}
+	div.calculator{
+		width: 40vw;
+	}
+	#warning{
+		width: 40vw;
+	}
+}
