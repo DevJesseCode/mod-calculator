@@ -68,7 +68,7 @@ div.calculator {
 }
 
 #mod {
-    width: 22%;
+    width: 23%;
     margin-left: 0px;
     margin-right: 0px;
     margin: 5px 0px 0px 0px;
@@ -80,7 +80,7 @@ div.calculator {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     margin-right: 0px;
-    width: 37%;
+    width: 35%;
     margin-top: 5px;
     margin-bottom: 0px;
 }
